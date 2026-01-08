@@ -1,20 +1,20 @@
 export const LastFmPeriod = {
-  SevenDays: '7day',
-  OneMonth: '1month',
-  ThreeMonths: '3month',
-  SixMonths: '6month',
-  TwelveMonths: '12month',
-  Overall: 'overall',
+  SevenDays: 'SevenDays',
+  OneMonth: 'OneMonth',
+  ThreeMonths: 'ThreeMonths',
+  SixMonths: 'SixMonths',
+  TwelveMonths: 'TwelveMonths',
+  Overall: 'Overall',
 } as const;
 
 export type LastFmPeriod = (typeof LastFmPeriod)[keyof typeof LastFmPeriod];
 
 
 export const LastFmPeriodTransaled = {
-  '7day': '7 dias',
-  '1month': '1 mês',
-  '3month': '3 meses',
-  '6month': '6 meses',
-  '12month': '12 meses',
-  'overall': 'Geral',
+  'SevenDays': '7 dias',
+  'OneMonth': '1 mês',
+  'ThreeMonths': '3 meses',
+  'SixMonths': '6 meses',
+  'TwelveMonths': '12 meses',
+  'Overall': 'Geral',
 };

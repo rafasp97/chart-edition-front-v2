@@ -2,12 +2,12 @@
 import Card from '../Card.vue';
 
 const session = defineModel<number>('session');
-const emit = defineEmits<{(e: 'getRank'): void}>();
+const emit = defineEmits<{(e: 'getCharts', group: string): void}>();
 
 const selectModel = (model: 'default' | 'custom') => {
   if(model === 'default'){
     session.value = 2;
-      emit('getRank');
+      emit('getCharts', 'edition'); //TODO: ADICIONAR MAIS GRUPOS QUANDO HOUVER
   }  else{
     session.value = 1;
   }

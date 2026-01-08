@@ -21,7 +21,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex flex-col items-center pt-15 md:pt-10 gap-10 h-full bg-[var(--dialog-black)]">
+  <div class="flex flex-col items-center pt-15 md:pt-10 gap-10 h-full bg-[var(--dialog-black-bg)]">
     <div class="bg-blue-100 border-1 rounded-xl p-4 w-[80%] text-center border-blue-300 relative" ref="container" >
       <span class="text-[0.8em] md:text-[1em]">Selecione as métricas de interesse.</span>
     </div>

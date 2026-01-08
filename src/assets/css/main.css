@@ -11,8 +11,9 @@
 }
 
 :root {
-  --dialog-black: #0a0a0e;
+  --dialog-black-bg: #0a0a0e;
+    --dialog-black: #11111b;
   --button-white: #f2f2f2;
   --button-white-secundary: #e6e6e6;
-  --status-purple: #6c74ee;
+  --generate-charts: #3e5b86;
 }

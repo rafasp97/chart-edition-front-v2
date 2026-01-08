@@ -2,7 +2,6 @@ import axios from 'axios';
 import type { Artist } from '../interfaces/Artist';
 import utils from '../utils/utils';
 import { LastFmPeriod } from '../enums/EPeriodLastFm';
-import FirestoreService from './fireStoreService';
 
 const users: string[] = [
     'iraaaph', 
@@ -37,8 +36,6 @@ export const rankService = {
       const noRepeat = utils.noRepeat(artists);
 
       const rank = utils.getRank(noRepeat);
-      const firebase = await FirestoreService.getLastRankByGroup("group editions");
-      console.log(firebase);
       return rank;
     },
 
