@@ -4,7 +4,7 @@ import { toast } from "vue3-toastify";
 
 export class ApiService {
 
-  private static baseUrl = 'http://localhost:3001';
+  private static baseUrl = 'https://charts-edition.onrender.com';
 
 
   static async getCharts(
