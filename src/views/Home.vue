@@ -15,7 +15,7 @@ const isOpen = ref(false);
       <Logo />
       <Button @action="isOpen = true" name="INICIAR"/>
     </div>
-    <div class="w-full h-20 flex items-center justify-center border-t-1 border-white text-white ">
+    <div class="w-full h-20 flex items-center justify-center xl:border-t-1 border-white text-white ">
       <a 
         href="https://github.com/rafasp97" 
         class="flex items-center gap-2 hover:text-blue-200 transition-colors"
