@@ -33,7 +33,7 @@ export class ApiService {
         formData.append(key, dto[key as keyof typeof dto]);
       });
 
-      const response = await axios.post(this.baseUrl, formData, {
+      const response = await axios.post(`${this.baseUrl}/image`, formData, {
         responseType: 'blob', 
         headers: {
           'Content-Type': 'multipart/form-data'
